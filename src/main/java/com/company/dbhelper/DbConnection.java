@@ -14,7 +14,8 @@ public class DbConnection {
        Connection connection = null;
 
         try {
-           connection= DriverManager.getConnection("jdbc:postgresql://localhost:5432/students","","");
+           connection= DriverManager.getConnection("jdbc:postgresql://localhost:5432/students","postgres","Zuvyte");
+           if (connection != null) System.out.println("Connection successful!");
        }catch (SQLException e){
             System.out.println("The was a problem connecting to the database");
             e.printStackTrace();
