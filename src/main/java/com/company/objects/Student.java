@@ -6,6 +6,10 @@ public class Student {
     private int id;
     private String name;
     private  int age;
+    private int mathematicsScore;
+    private int englishScore;
+    private int physicsScore;
+    private int chemistryScore;
 
     public Student(){
 
@@ -42,4 +46,37 @@ public class Student {
     public void setAge(int age) {
         this.age = age;
     }
+
+    public int getMathematicsScore() {
+        return mathematicsScore;
+    }
+
+    public void setMathematicsScore(int mathematicsScore) {
+        this.mathematicsScore = mathematicsScore;
+    }
+
+    public int getEnglishScore() {
+        return englishScore;
+    }
+
+    public void setEnglishScore(int englishScore) {
+        this.englishScore = englishScore;
+    }
+
+    public int getPhysicsScore() {
+        return physicsScore;
+    }
+
+    public void setPhysicsScore(int physicsScore) {
+        this.physicsScore = physicsScore;
+    }
+
+    public int getChemistryScore() {
+        return chemistryScore;
+    }
+
+    public void setChemistryScore(int chemistryScore) {
+        this.chemistryScore = chemistryScore;
+    }
+
 }
