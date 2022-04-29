@@ -17,6 +17,7 @@ public class StudentMenu {
         System.out.println("3. Add student scores of the subjects");
         System.out.println("4. Delete student scores");
         System.out.println("5. Edit student score");
+        System.out.println("6. Delete student scores indicating it by id");
 
         System.out.println("Select an option: ");
         int option = scanner.nextInt();
@@ -37,12 +38,14 @@ public class StudentMenu {
             case 5:
                 System.out.println(StudentController.editScore() ? "Student score was successfully updated" : "Student score was not updated");
                 break;
+            case 6:
+                System.out.println(StudentController.deleteScore() ? "Scores were successfully deleted" : "Scores were not deleted");
+                break;
             default:
                 System.out.println("Invalid option. Try again");
                 menu();
         }
     }
-
 }
 
 
